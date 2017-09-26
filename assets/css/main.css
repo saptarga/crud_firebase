@@ -1,0 +1,103 @@
+body {
+    font-family: Calibri;
+    font-weight: 400;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: Calibri;
+}
+.navbar-nav>.user-menu>.dropdown-menu>li.user-header>img {
+    z-index: 5;
+    height: 90px;
+    width: 90px;
+    border: 2px solid;
+    border-color: transparent;
+    border-color: rgba(255,255,255,0.2);
+    background: white;
+}
+.navbar-nav>.user-menu>.dropdown-menu>li.user-header {
+    height: 175px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.skin-green .main-header li.user-header {
+    background-color: rgba(26, 27, 26, 0.82);
+}
+
+.table>thead>tr>th {
+    padding: 8px;
+    line-height: 1.42857143;
+    /* vertical-align: top; */
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+
+.total-scorecard>tbody>tr>td.price {
+	text-align: right;
+}
+.total-scorecard>tbody>tr.total>td {
+	font-weight: bolder;
+}
+.total-scorecard>tbody>tr>td.ico {
+	text-align: center;
+}
+.total-scorecard>tbody>tr>td.jenis {
+	text-align: left;
+	width: 200px;
+}
+.total-scorecard>thead>tr>td {
+	font-weight: bolder;
+	text-align: center;
+}
+.total-scorecard>tbody>tr>td, .total-scorecard>tbody>tr>th, .total-scorecard>tfoot>tr>td, .total-scorecard>tfoot>tr>th, .total-scorecard>thead>tr>td, .total-scorecard>thead>tr>th {
+    padding: 2px;
+    line-height: 1.42857143;
+    vertical-align: middle;
+    border-top: 1px solid #ddd;
+}
+
+.header-chart{
+    text-align: center;
+    font-weight: bold;
+}
+.btn-help {
+    text-align: right;
+}
+.btn-help>a>img {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    padding: 4px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    vertical-align: middle;
+}
+
+.pull-left {
+    float: left;
+}
+
+.modal-primary .modal-body {
+    background-color: #ecf0f5 !important;
+    color: black !important;
+}
+
+.modal-header {
+    padding: 10px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.modal-title {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.42857143;
+}
+.modal-primary .modal-footer {
+    background-color: #ffffff !important;
+    border-top: 1px solid #e5e5e5;
+}
+.modal .modal-form-add { width: 800px; }
