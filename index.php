@@ -21,8 +21,6 @@
     <link rel="stylesheet" href="assets/plugins/DataTables/FixedColumns-3.2.3/css/fixedColumns.bootstrap.css">
     <!-- Date Picker -->
     <link rel="stylesheet" href="assets/plugins/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
-    <!-- Daterange picker -->
-    <link rel="stylesheet" href="assets/plugins/bower_components/bootstrap-daterangepicker/daterangepicker.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/dbtable.css">
 
@@ -202,13 +200,14 @@
 <script src="assets/js/main.js"></script>
 <!-- <script src="https://www.gstatic.com/firebasejs/4.1.1/firebase-database.js"></script> -->
 <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
-<script src="assets/js/crud_firebase.js"></script>
+<script type="text/javascript" src="assets/js/app_firebase.js"></script>
 <script type="text/javascript">
   $(function () {
     $('#datepicker').datepicker({
       autoclose: true,
       format: "dd-mm-yyyy"
-    })
+    });
+
   })
 </script>
 </body>

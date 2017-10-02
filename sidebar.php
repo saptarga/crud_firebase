@@ -19,13 +19,14 @@
                 <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
                 </button>
               </span>
+          
         </div>
       </form>
       <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MAIN NAVIGATION</li>
-        <li><a href="crud.php"><span>CRUD Easy UI</span></a></li>
+        <li><a href="index.php"><span>CRUD</span></a></li>
       </ul>
     </section>
     <!-- /.sidebar -->

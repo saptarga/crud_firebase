@@ -7,11 +7,14 @@
  		"fixedColumns":   true,
  		"select": true,
  		columns:[
- 			{data: 'nim'},
- 			{data: "nama"},
- 			{data: "jk"},
- 			{data: "ttl"},
- 			{data: "email"}
+ 		{data: 'nim'},
+ 		{data: "nama"},
+ 		{data: "jk"},
+ 		{data: "ttl"},
+ 		{data: "email"}
  		]
  	});
+
+ 	
+
  })

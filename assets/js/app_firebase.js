@@ -4,7 +4,7 @@ $(function () {
   var obj2 = [];
   var nama;
   var config = {
-    apiKey: "Your Key",
+    apiKey: "AIzaSyDX7MaN7k1RAR-pyj4O3Q5vrm-Vi_t_2Kc",
     authDomain: "belajar-759af.firebaseapp.com",
     databaseURL: "https://belajar-759af.firebaseio.com",
     projectId: "belajar-759af",
@@ -13,13 +13,10 @@ $(function () {
   };
   firebase.initializeApp(config);
   var tblMhs = firebase.database().ref().child('mhs');
-
   tblMhs.on("value", function(snap) {
     obj = [];
-    console.log(snap.val());
     $.each(snap.val(), function(index, element) {
       obj2 = {"nim":element.nim,"nama":element.nama,"jk":element.jk,"ttl":element.ttl,"email":element.email};
-      console.log(obj2.nim);
       obj.push(obj2);
     });
     addTable(obj);
@@ -90,14 +87,23 @@ $(function () {
  });
 
 
+  function cek_login(){
+    firebase.auth().onAuthStateChanged(function(user) {
+      if (user) {
+        return true;
+      } else {
+        	window.location.href = "login.php";
+        }
+    });
+  }
+  cek_login();
 
-
-
-
-
-
-
-
-
-
+  $( "#btn-sign-out" ).click(function(e) {
+    e.preventDefault();
+    firebase.auth().signOut().then(function() {
+      window.location.href = "login.php";
+    }).catch(function(error) {
+      swal ( "Oops" ,  "Something went wrong!" ,  "error" )
+    });
+  });
 }())
