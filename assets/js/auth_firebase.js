@@ -1,7 +1,7 @@
 $(function () {
 	$("#verified-alert").hide();
 	var config = {
-		apiKey: "AIzaSyDX7MaN7k1RAR-pyj4O3Q5vrm-Vi_t_2Kc",
+		apiKey: "",
 		authDomain: "belajar-759af.firebaseapp.com",
 		databaseURL: "https://belajar-759af.firebaseio.com",
 		projectId: "belajar-759af",
